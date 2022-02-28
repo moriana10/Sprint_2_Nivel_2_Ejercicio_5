@@ -1,0 +1,266 @@
+// Color principal: #5265E1
+// Color secundari: #FA5959
+/*$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;*/
+
+
+$primary: #5265E1;
+$secondary: #FA5959;
+$nav-tabs-border-width: 0px;
+$accordion-icon-color: blue;
+$list-group-color: white;               
+$list-group-bg: black;
+
+//$accordion-button-icon: url("../Images/icon-arrow.svg"); no lo cambio, queda muy feo!
+
+.parrafo {
+    color: grey;
+}
+.nav-item .btn {
+    width: 130px;
+    color: white;
+}
+.navbar {
+    background-color: white;
+}
+.imagen1 {
+    position: relative;
+    z-index: 1;
+}
+.imagen2 {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    background-color: #485BC7;
+    border-radius: 0 0 0 35%;
+    z-index: 0;
+    margin-left: 200px;
+    margin-top: -320px;
+}
+
+.imagen3 {
+    width: 500px;
+    height: 350px;
+    background-color: #485BC7;
+    border-radius: 0 0 35% 0;
+    z-index: 0;
+    margin-left: -70px;
+    margin-top: -230px;
+}
+
+.frase p {
+    color: grey;
+    margin-top: 20px;
+}
+.col-8 p {
+    color: grey;
+}
+.faq {
+    color: grey;
+}
+.text  {
+    color: grey;
+}
+.nav a {
+    color: grey;
+}
+  
+.nav a:hover {
+    color: black;
+}
+.nav-item {
+    border: none;
+}
+.tab-pane .nav-item {
+    border-bottom: 1px solid #EEEBEA; 
+}
+.tab-pane .nav-item:hover {
+    border-bottom: 3px solid #FA5959;
+}
+.card-img-top {
+    transform: scale(40%);
+    margin-top: -30px;
+}
+.card-title {
+    margin-top: -60px;
+}
+.dots {
+    margin-left: -12px;
+}
+  
+.accordion {
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+// FOOTER //
+
+section .container {
+    height: 350px;
+    background-color: #485BC7;
+    margin-top: 60px;
+}
+section .col-lg-12 {
+    color: white;
+}
+section .col-lg-4 {
+    color: white;
+}
+.form-control-lg {
+    width: 370px;
+}
+form .btn {
+    color: white;
+}
+#email ::placeholder {
+    color: grey;
+    opacity: 0.7;
+}
+.form-control-lg {
+    border: none;
+}
+
+footer {
+    background-color: black;    
+}
+footer .logofoot {
+    margin-left: -80px;
+}
+.list-group-item a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+// MEDIAQUERIES //   
+ @media (max-width: 576px) {
+    .navbar {
+        width: 90%;
+    }  
+    .col-12 {
+        order: 1;
+        transform: scale(90%);
+        margin-left: -130px;
+    }
+    .col-11 {
+        margin-left: 30px;
+    }
+    .col-9 {
+        order: 2;
+        align-items: center;
+    }
+    .tab-pane {
+        border: 12px solid grey;
+    }
+    .parrafo3 {
+        margin-top: 40px;
+    }
+    .nav-item {
+        border: 0px;
+    }
+    .frase .frase h2 {
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+    form .row {
+        display: column;
+        
+        
+    }
+    form .col {
+        order: 1;
+    }
+    form .col-auto {
+        order: 2;
+        margin-top: 10px;
+    }
+    .foot .container .pie .row .col-lg-2 {
+        margin-left: -200px;
+    }
+    
+     
+     
+ }  
+
+ @media (max-width: 768px){
+    
+    .col-lg-6 {
+        order: 1;
+    }
+    .col-lg-4 {
+        order: 2;
+        align-items: center;
+    }
+    .texto {
+        margin-top: 40px;
+    }
+    .parrafo {  
+        text-align: center;
+    }
+    .tab-pane {
+        border: 1px solid #DCDBDA;
+    }
+    .parrafo3 {
+        margin-top: 40px;
+    }
+    .nav-item {
+        border: 0px;
+    }
+    .tab-pane {
+        border: none;
+    }
+    .frase {
+        justify-content: center;
+    
+    .frase h2 {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .frase .parrafo2 {    
+        text-align: center;
+    }
+    .boton {
+        visibility: hidden;
+    }
+    form .col-10 {
+        order: 1;
+    }
+    form .btn{
+        order: 2;
+        margin-top: 15px;        
+    }
+       
+ }
+ @media (max-width: 992px){
+    .navbar-toggler {
+        margin-right: -70px;
+    }
+    .col-lg-7 {
+        order: 1;
+    }
+    .col-lg-5 {
+        order: 2;
+        align-items: center;
+    }
+    .texto {
+        margin-top: 20px;
+    }
+    .frase {
+        margin-top: 20px;
+    }
+
+ }
+
+
+ }
+
+@import "../node_modules/bootstrap/scss/bootstrap";
